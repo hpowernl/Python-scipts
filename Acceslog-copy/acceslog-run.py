@@ -38,7 +38,9 @@ if not os.path.exists(dst_dir):
 
 today = datetime.date.today()
 dst_file = os.path.join(dst_dir, f"{today}-access.log")
-shutil.copy2(src_file, dst_file)
+
+with open(src_file, 'rb') as src, open(dst_file, 'ab') as dst:
+    shutil.copyfileobj(src, dst)
 
 with open(checksum_file, 'w') as f:
     f.write(new_checksum)
