@@ -20,3 +20,8 @@ You can modify these locations directly in the script.
 Run the script in a Python environment. It does not require any command line arguments. 
 You will need write permissions for the destination directory and read permissions for the monitored file and checksum file.
 
+## Contribution
+Feel free to submit pull requests for bug fixes or improvements.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
